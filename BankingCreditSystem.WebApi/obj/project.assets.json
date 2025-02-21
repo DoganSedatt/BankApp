@@ -33,6 +33,55 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "BankingCreditSystem.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "BankingCreditSystem.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BankingCreditSystem.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankingCreditSystem.Application.dll": {}
+        }
+      },
+      "BankingCreditSystem.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/BankingCreditSystem.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankingCreditSystem.Core.dll": {}
+        }
+      },
+      "BankingCreditSystem.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "BankingCreditSystem.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BankingCreditSystem.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankingCreditSystem.Domain.dll": {}
+        }
+      },
+      "BankingCreditSystem.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "BankingCreditSystem.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BankingCreditSystem.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankingCreditSystem.Persistence.dll": {}
+        }
       }
     }
   },
@@ -67,10 +116,32 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "BankingCreditSystem.Application/1.0.0": {
+      "type": "project",
+      "path": "../BankingCreditSystem.Application/BankingCreditSystem.Application.csproj",
+      "msbuildProject": "../BankingCreditSystem.Application/BankingCreditSystem.Application.csproj"
+    },
+    "BankingCreditSystem.Core/1.0.0": {
+      "type": "project",
+      "path": "../BankingCreditSystem.Core/BankingCreditSystem.Core.csproj",
+      "msbuildProject": "../BankingCreditSystem.Core/BankingCreditSystem.Core.csproj"
+    },
+    "BankingCreditSystem.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BankingCreditSystem.Domain/BankingCreditSystem.Domain.csproj",
+      "msbuildProject": "../BankingCreditSystem.Domain/BankingCreditSystem.Domain.csproj"
+    },
+    "BankingCreditSystem.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../BankingCreditSystem.Persistence/BankingCreditSystem.Persistence.csproj",
+      "msbuildProject": "../BankingCreditSystem.Persistence/BankingCreditSystem.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "BankingCreditSystem.Application >= 1.0.0",
+      "BankingCreditSystem.Persistence >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.2"
     ]
   },
@@ -105,7 +176,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\six10\\Desktop\\BankApp\\BankingCreditSystem.Application\\BankingCreditSystem.Application.csproj": {
+              "projectPath": "C:\\Users\\six10\\Desktop\\BankApp\\BankingCreditSystem.Application\\BankingCreditSystem.Application.csproj"
+            },
+            "C:\\Users\\six10\\Desktop\\BankApp\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj": {
+              "projectPath": "C:\\Users\\six10\\Desktop\\BankApp\\BankingCreditSystem.Persistence\\BankingCreditSystem.Persistence.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "BankingCreditSystem.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/BankingCreditSystem.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankingCreditSystem.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BankingCreditSystem.Core/1.0.0": {
+      "type": "project",
+      "path": "../BankingCreditSystem.Core/BankingCreditSystem.Core.csproj",
+      "msbuildProject": "../BankingCreditSystem.Core/BankingCreditSystem.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "BankingCreditSystem.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\six10\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\six10\\Desktop\\BankApp\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj": {
+              "projectPath": "C:\\Users\\six10\\Desktop\\BankApp\\BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
